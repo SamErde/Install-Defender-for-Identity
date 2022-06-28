@@ -10,3 +10,5 @@ $MDI = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "Azure Adva
 if ($MDI) {
     $ATA.Uninstall()
  }
+
+# Review notes and give credit: https://dirteam.com/sander/2022/03/23/howto-programmatically-add-a-microsoft-defender-for-identity-action-account-to-active-directory/
