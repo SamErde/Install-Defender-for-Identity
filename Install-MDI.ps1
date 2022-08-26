@@ -1,4 +1,4 @@
-# WORKING DRAFT - Just don't save your access key here in plain text.
+# WORKING DRAFT - Don't save your access key here in plain text.
 
 # Install Defender for Identity Sensor (works on Windows Server Core)
 $AccessKey = ''
