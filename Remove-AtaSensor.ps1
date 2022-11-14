@@ -3,7 +3,8 @@ $ATA = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -like "Microsof
 $MDI = Get-WmiObject -Class Win32_Product | Where-Object{$_.Name -eq "Azure Advanced Threat Protection Sensor"}
 
 if ($MDI) {
-  Write-Output "Installation found:
-  $ATA
+  Write-Output "Installation found: $ATA"
   $ATA.Uninstall()
  }
+
+ # NOTE: Removal of the MDI Sensor seems to work better by running "Azure Advanced Threat Analytics Sensor.msi /uninstall"
